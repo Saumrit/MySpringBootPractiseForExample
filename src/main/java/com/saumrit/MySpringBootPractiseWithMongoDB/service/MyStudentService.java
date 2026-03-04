@@ -25,16 +25,16 @@ public class MyStudentService {
         return myStudentRepository.findAll(sort);
     }
 
-//    public StudentDTO fetchSingleStudentById(String id){
-//        return myStudentRepository.findById(id);
-//    }
+    public void deleteStudent(String id){
+         myStudentRepository.deleteById(id);
+    }
 
     public void addSingleStudent(StudentDTO studentDTO){
         myStudentRepository.insert(studentDTO);
     }
 
-    public void updateSingleStudent(StudentDTO studentDTO){
-        myStudentRepository.save(studentDTO);
+    public StudentDTO updateSingleStudent(StudentDTO studentDTO){
+        return myStudentRepository.save(studentDTO);
     }
 
 
