@@ -1,2 +1,2 @@
 # MySpringBootPractiseWithMongoDB
-Project for Spring-Boot with MongoDb using JPA and MongoTemplate
+Spring-Boot with MongoDb using JPA and MongoTemplate + No Swagger UI 
